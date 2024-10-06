@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logomain"><b>Connecting the Dots for Success!</b></div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#WorkExp">Experience</a></li>
+          <li><a href="#experience">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">John Doe</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#WorkExp" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/Newprofile.jpg" alt="Lokesh profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Lokesh Pogiri</h1>
+        <p class="section__text__p2">Data Analyst</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/Lokesh_resume.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/Linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon" 
+            onclick="window.open('https://www.linkedin.com/in/lokesh-pogiri/', '_blank');"
+          />
+          <img
+            src="./assets/Github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="window.open('https://github.com/pogirilokesh','_blank');"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container1">
+          <img
+            src="./assets/Aboutpic.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/Knowme.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Profile</h3>
+              <div class="grid"><div class="row">
+              <div class="left-column">
+                <p class="Content"><b>Experience: </b></p></div>
+              <div class="right-column">
+                    <p class="Content">2 years</p></div>
+               <div class="left-column">
+                <p class="Content"><b>Certifications: </b></p></div>
+              <div class="right-column">
+                    <p class="Content">Professional Google Data Analytics, Python for Data Science</p></div>
+                <div class="left-column">
+                <p class="Content"><b>Languages Known: </b></p></div>
+              <div class="right-column">
+                    <p class="Content">English, Telugu</p></div>
+            <div class="left-column">
+                <p class="Content"><b>Personality Traits: </b></p></div>
+              <div class="right-column">
+                    <p class="Content">Quick Learner, Team Player, Good Leader</p></div></div>
+            </div></div>
+            <div class="details-container">
+              <img
+                src="./assets/Education.png"
+                alt="Education icon"
+                class="Knowmeicon"
+              />
+              <h3>Education</h3>
+              <p class="EdContent"><b>Masters in Computer and Information Sciences</b></p>
+              <p class="EdContent">Oklahoma State University, Stillwater, OK, United States.</p>
+              <p class="EdContent"><b> GPA: </b>3.7/4.0</p><br>
+              <p class="EdContent"><b>Bachelor of Technology in Computer Science and Engineering</b></p>
+              <p class="EdContent">GMR Institute of Technology, Rajam, AP, India.</p>
+              <p class="EdContent"><b> GPA: </b>3.7/4.0</p>
+
+            </div>
+          </div>
+          <div class="text-container">
+            <p class="aboutmepara">
+                I'm a passionate Data Analyst with a knack for uncovering insights and solving complex problems. With a strong background in data analysis, visualization, and decision-making, I thrive on turning information into impactful solutions. Whether it's optimizing processes or driving business growth, I'm dedicated to making data work for better results.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Skillset</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Technical Skills</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/Skillset.png"
+                  alt="Experience icon"
+                  class="Skillicon"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <p class="SkillContent">Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/Skillset.png"
+                  alt="Experience icon"
+                  class="Skillicon"
+                />
+                <div>
+                  <h3>Tableau</h3>
+                  <p class="SkillContent">Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/Skillset.png"
+                  alt="Experience icon"
+                  class="Skillicon"
+                />
+                <div>
+                  <h3>Power BI</h3>
+                  <p class="SkillContent">Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/Skillset.png"
+                  alt="Experience icon"
+                  class="Skillicon"
+                />
+                <div>
+                  <h3>Microsoft Excel</h3>
+                  <p class="SkillContent">Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/Skillset.png"
+                  alt="Experience icon"
+                  class="Skillicon"
+                />
+                <div>
+                  <h3>SQL</h3>
+                  <p class="SkillContent">Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/Skillset.png"
+                  alt="Experience icon"
+                  class="Skillicon"
+                />
+                <div>
+                  <h3>R</h3>
+                  <p class="SkillContent">Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Operating Systems/Platforms</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/Skillset.png"
+                  alt="Experience icon"
+                  class="Skillicon"
+                />
+                <div>
+                  <h3>Windows</h3>
+                  <p class="SkillContent">Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/Skillset.png"
+                  alt="Experience icon"
+                  class="Skillicon"
+                />
+                <div>
+                  <h3>MAC OS</h3>
+                  <p class="SkillContent">Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/Skillset.png"
+                  alt="Experience icon"
+                  class="Skillicon"
+                />
+                <div>
+                  <h3>Linux</h3>
+                  <p class="SkillContent">Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/Skillset.png"
+                  alt="Experience icon"
+                  class="Skillicon"
+                />
+                <div>
+                  <h3>Git</h3>
+                  <p class="SkillContent">Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="WorkExp">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+          <div class="about-details-container">
+            <div class="about-containers">
+              <div class="details-container">
+                <img
+                  src="./assets/Workexp.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <h2 class="WorkContent1">August 2024 - Present</h2>
+                <h3 class="WorkContect2">Graduate Teaching Assistant </h3>
+                <h4 class="WorkContect3">Oklahoma State University</h4>
+                <p class="EdContent">Monitored and analyzed performance metrics of OSU Enterprise IT server infrastructure and systems to ensure
+                    optimal functionality and reliability.
+                    ◆ Managed and maintained college databases, ensuring data integrity and security while optimizing database
+                    performance for academic and administrative use.
+                    ◆ Developed and implemented data-driven strategies to enhance system monitoring processes, reducing downtime
+                    by 15%through proactive issue resolution</p>
+                </div>
+                <div class="details-container">
+                    <img
+                      src="./assets/Workexp.png"
+                      alt="Experience icon"
+                      class="icon"
+                    />
+                    <h2 class="WorkContent1">June 2023 - Jan 2024</h2>
+                    <h3 class="WorkContect2">Student Operator</h3>
+                    <h4 class="WorkContect3">Oklahoma State University</h4>
+                    <p class="EdContent">Monitored and analyzed performance metrics of OSU Enterprise IT server infrastructure and systems to ensure
+                        optimal functionality and reliability.
+                        Managed and maintained college databases, ensuring data integrity and security while optimizing database
+                        performance for academic and administrative use.
+                        Developed and implemented data-driven strategies to enhance system monitoring processes, reducing downtime
+                        by 15%through proactive issue resolution</p>
+                </div> 
+              <div class="details-container">
+                <img
+                  src="./assets/Workexp.png"
+                  alt="Education icon"
+                  class="Knowmeicon"
+                />
+                <h2 class="WorkContent1">Sep 2021 - Jan 2023</h2>
+                    <h3 class="WorkContect2">Graduate Teaching Assistant </h3>
+                    <h4 class="WorkContect3">Oklahoma State University</h4>
+                    <p class="EdContent">Spearheaded numerous client service initiatives for a France-based client, focusing on enhancing employability
+                        and facilitating job opportunities.
+                        Performed root cause analysis for production and test environments during INT, UAT, and production phases,
+                        successfully reducing incident recurrence. Managed customer support tickets and resolved critical work orders
+                        with a 99% SLA compliance rate.
+                        Managed the entire lifecycle of EAI projects, from analysis to deployment, leveraging TIBCO products. Delivered
+                        98% ontime project completion rates, and implemented nJAMS to optimize log monitoring and troubleshooting,
+                        reducing downtime
+                        Managed end-to-end testing and code enhancement requests for new and existing applications, resulting increase
+                        in application performance and stability.
+                        Streamlined application code deployment processes, increasing deployment efficiency by 18% using Admin
+                        console utilities. Conducted system health checks and response time monitoring, reducing system outages by 20%.</p>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+        <img
+          src="./assets/arrow.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='./#experience'"
+        />
+      </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project One</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Two</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-3.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/Gmail.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:examplemail@gmail.com">pogirilokesh@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/lokesh-pogiri/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#WorkExp">Experience</a></li>
+            <li><a href="#experience">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p class="CopyContent">Copyright &#169; 2024 Lokesh Pogiri. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
